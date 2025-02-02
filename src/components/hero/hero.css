@@ -1,0 +1,147 @@
+.hero {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+}
+.hSecttion {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.htitle {
+	color: pink;
+	margin-top: 50px;
+	font-size: 100px;
+}
+.ititle {
+	color: white;
+}
+.awards {
+	width: 40%;
+}
+.awards h1 {
+	text-wrap: nowrap;
+}
+.awards p {
+	font-size: 14px;
+	color: #ddd;
+	margin: 16px 0;
+}
+.awardList {
+	display: flex;
+	gap: 8px;
+}
+.awardList img {
+	width: 36px;
+	height: 36px;
+	padding: 8px;
+	background-color: #fff;
+	border-radius: 100%;
+}
+.scroll {
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.hSecttion.right {
+	align-items: end;
+}
+.follow {
+	display: flex;
+	gap: 12px;
+	flex-direction: column;
+	padding: 16px;
+	background-color: #2f204e;
+	border-bottom-right-radius: 10px;
+}
+
+.follow img {
+	width: 20px;
+	height: 20px;
+}
+
+.followtextcontainer {
+	width: 20px;
+	height: 20px;
+}
+.followtext {
+	background-color: red;
+	font-size: 12px;
+	rotate: 90deg;
+	width: max-content;
+	height: 100%;
+	transform-origin: left top;
+	transform: translateY(-20px);
+	padding: 0 8px;
+	display: flex;
+	align-items: center;
+	border-bottom-right-radius: 10px;
+}
+.bubblecontainer {
+	width: 50%;
+	display: flex;
+	gap: 8px;
+	justify-content: space-between;
+	align-items: end;
+}
+.buble {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	color: #555;
+	padding: 24px;
+	font-size: 18px;
+	border-radius: 20px 20px 0 20px;
+}
+.bubblecontainer img {
+	width: 50px;
+	height: 50px;
+	background-color: #dd4c62;
+	border-radius: 100%;
+	object-fit: cover;
+}
+
+.certificate {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: 300;
+	color: #ddd;
+	align-items: center;
+}
+.certificate img {
+	width: 70px;
+	height: 70px;
+}
+.contactLink {
+	margin-bottom: 50px;
+}
+.contactButton {
+	position: relative;
+}
+.circleText {
+	letter-spacing: 3px;
+	font-style: 20px;
+}
+
+.arrow {
+	position: absolute;
+	color: #2f204e;
+	rotate: 45deg;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
