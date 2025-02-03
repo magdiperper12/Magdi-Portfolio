@@ -2,69 +2,119 @@ import './hero.css';
 import { CiDesktopMouse2 } from 'react-icons/ci';
 import Speech from './Speech';
 import { BsArrowUp } from 'react-icons/bs';
+import { motion } from 'motion/react';
+const awardsvaraints = {
+	initial: { x: -100, opacity: 0 },
+	animate: {
+		x: 0,
+		opacity: 1,
+		transition: { duration: 1, staggerChildren: 0.3 },
+	},
+};
+const followvariants = {
+	initial: { y: -100, opacity: 0 },
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: { duration: 1, staggerChildren: 0.3 },
+	},
+};
 function Hero() {
 	return (
 		<div className='hero'>
 			<div className='hSecttion left'>
 				{/*title*/}
-				<h1 className='htitle'>
+				<motion.h1
+					initial={{ y: -100, opacity: 0 }}
+					animate={{ y: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
+					className='htitle'>
 					Hey There, <br />
 					<span className='ititle'>I`m Magdi</span>
-				</h1>
+				</motion.h1>
 				{/*awards*/}
-				<div className='awards'>
-					<h1>Frontend Developer</h1>
-					<p>
+				<motion.div
+					variants={awardsvaraints}
+					initial='initial'
+					animate='animate'
+					className='awards'>
+					<motion.h1 variants={awardsvaraints}>Frontend Developer</motion.h1>
+					<motion.p variants={awardsvaraints}>
 						Proficient in building scalable, responsive web applications with a
 						focus on performance,user experience, and accessibility.
-					</p>
-					<div className='awardList'>
-						<img
+					</motion.p>
+					<motion.div
+						variants={awardsvaraints}
+						className='awardList'>
+						<motion.img
+							variants={awardsvaraints}
 							src='/award1.png'
 							alt=''
 						/>
-						<img
+						<motion.img
+							variants={awardsvaraints}
 							src='/award2.png'
 							alt=''
 						/>
-						<img
+						<motion.img
+							variants={awardsvaraints}
 							src='/award3.png'
 							alt=''
 						/>
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 				{/*scroll svg*/}
-				<CiDesktopMouse2 className='scroll' />
+				<motion.div
+					animate={{ y: [0, 8], opacity: [0, 1, 0] }}
+					transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}>
+					<CiDesktopMouse2 className='scroll' />
+				</motion.div>
 			</div>
 			<div className='hSecttion right'>
-				<div className='follow'>
-					<a href='/'>
+				<motion.div
+					className='follow'
+					variants={followvariants}
+					initial='initial'
+					animate='animate'>
+					<motion.a
+						variants={followvariants}
+						href='/'>
 						<img
 							src='/instagram.png'
 							alt=''
 						/>
-					</a>
-					<a href='/'>
+					</motion.a>
+					<motion.a
+						variants={followvariants}
+						href='/'>
 						<img
 							src='/facebook.png'
 							alt=''
 						/>
-					</a>
-					<a href='/'>
+					</motion.a>
+					<motion.a
+						variants={followvariants}
+						href='/'>
 						<img
 							src='/youtube.png'
 							alt=''
 						/>
-					</a>
-					<div className='followtextcontainer'>
+					</motion.a>
+					<motion.div
+						variants={followvariants}
+						className='followtextcontainer'>
 						<div className='followtext'>FOLLOW ME</div>
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 
 				{/*Bubble*/}
 				<Speech />
 				{/*certificate */}
-				<div className='certificate'>
+				<motion.div
+					initial={{ x: 100, opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
+					className='certificate'>
 					<img
 						src='/certificate.png'
 						alt=''
@@ -72,9 +122,12 @@ function Hero() {
 					LAM CERTIFICATED <br />
 					PROFETIONAL <br />
 					UI DESIGNER
-				</div>
+				</motion.div>
 				{/*contact button*/}
-				<a
+				<motion.a
+					initial={{ x: 100, opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
 					href='/#contact'
 					className='contactLink'>
 					<div className='contactButton'>
@@ -106,7 +159,16 @@ function Hero() {
 						</svg>
 						<BsArrowUp className='arrow' />
 					</div>
-				</a>
+				</motion.a>
+			</div>
+			<div className='bg'>
+				{/* 3d */}
+				<div className='himg'>
+					<img
+						src='/hero.png'
+						alt=''
+					/>
+				</div>
 			</div>
 		</div>
 	);
