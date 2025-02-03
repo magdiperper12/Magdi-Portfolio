@@ -111,9 +111,8 @@ function Hero() {
 				<Speech />
 				{/*certificate */}
 				<motion.div
-					initial={{ x: 100, opacity: 0 }}
-					animate={{ x: 0, opacity: 1 }}
-					transition={{ duration: 1 }}
+					animate={{ opacity: [0, 1] }}
+					transition={{ duration: 1.5, delay: 0.5 }}
 					className='certificate'>
 					<img
 						src='/certificate.png'
@@ -125,9 +124,8 @@ function Hero() {
 				</motion.div>
 				{/*contact button*/}
 				<motion.a
-					initial={{ x: 100, opacity: 0 }}
-					animate={{ x: 0, opacity: 1 }}
-					transition={{ duration: 1 }}
+					animate={{ rotate: [0, 360] }}
+					transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
 					href='/#contact'
 					className='contactLink'>
 					<div className='contactButton'>
@@ -153,7 +151,7 @@ function Hero() {
 								<textPath
 									href='#innerCirclePath '
 									startOffset='45%'>
-									Contact Me 👍
+									Contact Me 📩
 								</textPath>
 							</text>
 						</svg>
