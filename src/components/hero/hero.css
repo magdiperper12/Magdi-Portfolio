@@ -105,7 +105,7 @@
 	border-bottom-right-radius: 10px;
 }
 .bubblecontainer {
-	width: 50%;
+	width: 55%;
 	display: flex;
 	gap: 8px;
 	justify-content: space-between;
@@ -168,4 +168,72 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 1536px) {
+	.htitle {
+		font-size: 72;
+	}
+}
+
+@media (max-width: 1280px) {
+	.bg {
+		height: 60%;
+		top: auto;
+		bottom: 0;
+	}
+
+	.himg {
+		height: 100%;
+	}
+	.htitle {
+		font-size: 70px;
+	}
+	.awards {
+		width: 60%;
+	}
+	.bubblecontainer {
+		width: 90%;
+	}
+}
+@media (max-width: 1024) {
+	.bg {
+		height: 50%;
+	}
+	.htitle {
+		font-size: 60px;
+	}
+}
+@media (max-width: 768px) {
+	.hero {
+		flex-direction: column;
+	}
+	.bg {
+		height: 60%;
+	}
+	.hSecttion {
+		width: 100%;
+	}
+	.hSecttion.left {
+		align-items: center;
+		text-align: center;
+		gap: 36px;
+	}
+	.htitle {
+		font-size: 48px;
+	}
+	.awards {
+		width: 100%;
+	}
+	.awardList {
+		justify-content: center;
+	}
+	.hSecttion.right {
+		justify-content: end;
+	}
+	.follow,
+	.bubblecontainer,
+	.certificate {
+		display: none;
+	}
 }
