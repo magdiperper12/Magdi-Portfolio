@@ -173,8 +173,8 @@ function Hero() {
 				</Canvas>
 
 				<motion.div
-					animate={{ y: [200, 0], x: [100, 0], rotateY: [90, 0] }}
-					transition={{ duration: 1.5 }}
+					animate={{ y: [100, 0], x: [100, 0] }}
+					transition={{ duration: 1 }}
 					className='himg'>
 					<img
 						src='/magdi.png'
