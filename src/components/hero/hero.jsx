@@ -3,6 +3,9 @@ import { CiDesktopMouse2 } from 'react-icons/ci';
 import Speech from './Speech';
 import { BsArrowUp } from 'react-icons/bs';
 import { motion } from 'motion/react';
+import Shape from './shape';
+import { Canvas } from '@react-three/fiber';
+import { Suspense } from 'react';
 const awardsvaraints = {
 	initial: { x: -100, opacity: 0 },
 	animate: {
@@ -159,14 +162,25 @@ function Hero() {
 					</div>
 				</motion.a>
 			</div>
-			<div className='bg'>
+			<div className='bg '>
 				{/* 3d */}
-				<div className='himg'>
+				<Canvas>
+					<mesh>
+						<Suspense fallback={'Loading...'}>
+							<Shape />
+						</Suspense>
+					</mesh>
+				</Canvas>
+
+				<motion.div
+					animate={{ y: [200, 0], x: [100, 0], rotateY: [90, 0] }}
+					transition={{ duration: 1.5 }}
+					className='himg'>
 					<img
-						src='/hero.png'
+						src='/magdi.png'
 						alt=''
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
