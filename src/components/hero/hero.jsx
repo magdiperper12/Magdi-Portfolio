@@ -173,7 +173,7 @@ function Hero() {
 				</Canvas>
 
 				<motion.div
-					animate={{ y: [100, 0], x: [100, 0] }}
+					animate={{ y: [50, 0], x: [50, 0] }}
 					transition={{ duration: 1 }}
 					className='himg'>
 					<img
