@@ -13,6 +13,8 @@ body {
 html {
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
+	overflow-x: auto;
+	scrollbar-width: none;
 }
 a {
 	text-decoration: none;
@@ -30,18 +32,10 @@ section {
 	height: 100vh;
 	scroll-snap-align: center;
 }
-section:nth-child(1) {
-	background-color: rgb(24, 22, 54);
-}
-section:nth-child(2) {
-	background-color: rgb(35, 32, 76);
-}
 section:nth-child(3) {
-	background-color: rgb(40, 37, 88);
+	height: auto;
 }
-section:nth-child(4) {
-	background-color: rgb(56, 56, 128);
-}
+
 @media (min-width: 640px) {
 	.container {
 		max-width: 640px;
