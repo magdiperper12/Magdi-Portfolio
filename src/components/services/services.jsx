@@ -111,9 +111,9 @@ const Services = () => {
 			</div>
 			<div className='sSection right'>
 				{select === 1 ? (
-					<HumanContainer />
-				) : select === 2 ? (
 					<ComputerModelContainer />
+				) : select === 2 ? (
+					<HumanContainer />
 				) : (
 					<MugModelContainer />
 				)}

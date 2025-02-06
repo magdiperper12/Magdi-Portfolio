@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei';
-import { Model } from './Humanoid_robot_ai';
+import { Model } from './Reaponsive';
 
 const HumanContainer = () => {
 	return (
@@ -17,8 +17,8 @@ const HumanContainer = () => {
 					autoRotate
 				/>
 				<PerspectiveCamera
-					position={[-1, 0, 1.8]}
-					zoom={1}
+					position={[-1, 0, 8]}
+					zoom={0.8}
 					makeDefault
 				/>
 			</Suspense>

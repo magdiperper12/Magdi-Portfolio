@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
-import { MugModel } from './MugModel';
 import { OrbitControls, PerspectiveCamera, Stage } from '@react-three/drei';
+import { Model } from './React';
 
 const MugModelContainer = () => {
 	return (
@@ -10,7 +10,7 @@ const MugModelContainer = () => {
 				<Stage
 					environment='night'
 					intensity={10}>
-					<MugModel />
+					<Model />
 				</Stage>
 				<OrbitControls
 					enableZoom={false}
