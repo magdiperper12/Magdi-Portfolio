@@ -75,7 +75,7 @@ const Contact = () => {
 						<input
 							type='text'
 							name='user_username'
-							placeholder='John Doe'
+							placeholder='Your Name'
 						/>
 					</motion.div>
 					<motion.div

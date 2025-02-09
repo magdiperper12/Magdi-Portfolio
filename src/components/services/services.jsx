@@ -42,19 +42,19 @@ const services = [
 		id: 1,
 		img: '/service1.png',
 		title: 'Web Development',
-		counter: 35,
+		counter: 54,
 	},
 	{
 		id: 2,
 		img: '/service2.png',
-		title: 'Product Design',
+		title: 'Advanced Project',
 		counter: 23,
 	},
 	{
 		id: 3,
 		img: '/service3.png',
-		title: 'Branding',
-		counter: 46,
+		title: 'Framework',
+		counter: 7,
 	},
 ];
 
@@ -99,13 +99,13 @@ const Services = () => {
 				<div className='counterList'>
 					<Conter
 						from={0}
-						to={148}
+						to={54}
 						text={'Project Complate'}
 					/>
 					<Conter
 						from={0}
-						to={67}
-						text={'Happy Clients'}
+						to={23}
+						text={'Advanced Project'}
 					/>
 				</div>
 			</div>
