@@ -114,7 +114,7 @@ function Hero() {
 						variants={followvariants}
 						href='https://www.linkedin.com/in/magdi-perper-95b132343/'>
 						<img
-							src='/public/whatsapp.png'
+							src='/whatsapp.png'
 							alt=''
 						/>
 					</motion.a>

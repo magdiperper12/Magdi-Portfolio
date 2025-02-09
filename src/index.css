@@ -13,7 +13,7 @@ body {
 html {
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	overflow-x: auto;
+	overflow-x: hidden;
 	scrollbar-width: none;
 }
 a {

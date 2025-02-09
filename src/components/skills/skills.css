@@ -1,9 +1,159 @@
-.skills {
-	height: 100vh;
-	background: #3a3a6b;
-	font-size: 100px;
-	font-weight: bold;
+.skills-container {
+	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 40px;
+}
+
+.skills-title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.skills-title span {
+	color: #38bdf8;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	width: 100%;
+}
+
+.skill-category {
+	background: rgb(39, 44, 72);
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	padding-bottom: 5px;
+}
+
+.skill-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 15px;
+	padding-top: 10px;
+}
+
+.skill-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba(55, 58, 98, 0.669);
+	padding: 15px;
+	border-radius: 10px;
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: transform 0.1s ease-in-out, background 0.2s ease-in-out;
+	cursor: pointer;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-box:hover {
+	transform: scale(0.97);
+	background: rgba(22, 23, 44, 0.849);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.icon {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+/* Individual Icon Colors */
+.html {
+	color: #e44d26;
+}
+.css {
+	color: #264de4;
+}
+.js {
+	color: #f7df1e;
+}
+.ts {
+	color: #3178c6;
+}
+.bootstrap {
+	color: #b19cd1;
+}
+.tailwind {
+	color: #38bdf8;
+}
+.github {
+	color: #fff;
+}
+.react {
+	color: #61dafb;
+}
+.nextjs {
+	color: #000;
+	background: #fff;
+	border-radius: 50%;
+	padding: 5px;
+}
+.gatsby {
+	color: #8000ff;
+}
+.git {
+	color: #f1502f;
+}
+.vite {
+	color: #646cff;
+}
+.animation {
+	color: #ff6bcb;
+}
+.threeD {
+	color: #14b8a6;
+}
+.responsive {
+	color: #22c55e;
+}
+
+/* 🔹 Mobile Responsiveness */
+@media (max-width: 768px) {
+	.skills-grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
+	.skill-box {
+		padding: 12px;
+		font-size: 0.9rem;
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.skills-grid {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	}
+
+	.skill-box {
+		padding: 10px;
+		font-size: 0.8rem;
+	}
+
+	.icon {
+		font-size: 1.8rem;
+	}
 }

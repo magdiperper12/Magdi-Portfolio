@@ -7,6 +7,7 @@ import Project4 from './components/portfolio/project4';
 import Project5 from './components/portfolio/project5';
 import Services from './components/services/services';
 import Skills from './components/skills/skills';
+
 const App = () => {
 	return (
 		<div className='container'>

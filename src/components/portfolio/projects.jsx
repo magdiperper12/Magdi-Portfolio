@@ -1,6 +1,7 @@
 import './project.css';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
+import { FaEye, FaGit, FaGithub } from 'react-icons/fa';
 
 const Project = ({ name, desc, image, live, github }) => {
 	const ref = useRef();
@@ -46,13 +47,13 @@ const Project = ({ name, desc, image, live, github }) => {
 						className='anchor'
 						href={live}
 						variants={listVariant}>
-						Live
+						Live <FaEye />
 					</motion.a>
 					<motion.a
 						className='anchor'
 						href={github}
 						variants={listVariant}>
-						GitHub
+						Github <FaGithub />
 					</motion.a>
 				</motion.div>
 			</motion.div>
