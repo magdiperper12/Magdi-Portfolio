@@ -1,6 +1,6 @@
 import './contact.css';
 // import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'motion/react';
 import ContactSvg from './ContactSvg';
 

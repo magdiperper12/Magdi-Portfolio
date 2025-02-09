@@ -1,0 +1,94 @@
+.project {
+	height: 100vh;
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.project img {
+	width: 50%;
+}
+
+.project .desc {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 50%;
+}
+.project .desc h1 {
+	color: rgb(220, 220, 255);
+	font-size: 35px;
+}
+.project .desc p {
+	color: rgb(255, 233, 233);
+	font-size: 20px;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 30px;
+}
+.anchor {
+	background-color: rgb(11, 60, 120);
+	color: white;
+	font-size: 17px;
+	width: 100px;
+	outline: none;
+	border-radius: 5px;
+	border: 0ch;
+	padding: 10px 20px 10px 20px;
+}
+.anchor:hover {
+	background-color: rgb(16, 97, 164);
+	cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+	.project {
+		display: flex;
+	}
+	.project img {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.project {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.project .desc {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 70%;
+	}
+	.project img {
+		width: 70%;
+	}
+}
+@media (max-width: 1024) {
+	.project .desc {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 80%;
+	}
+	.project img {
+		width: 80%;
+	}
+}
+@media (max-width: 768px) {
+	.project .desc {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 90%;
+	}
+	.project img {
+		width: 90%;
+	}
+}

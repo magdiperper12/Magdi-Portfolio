@@ -1,6 +1,10 @@
 import Contact from './components/contact/contact';
 import Hero from './components/hero/hero';
-import Portfolio from './components/portfolio/portfolio';
+import Project1 from './components/portfolio/project1';
+import Project2 from './components/portfolio/project2';
+import Project3 from './components/portfolio/project3';
+import Project4 from './components/portfolio/project4';
+import Project5 from './components/portfolio/project5';
 import Services from './components/services/services';
 const App = () => {
 	return (
@@ -11,9 +15,24 @@ const App = () => {
 			<section id='#services'>
 				<Services />
 			</section>
-			<section id='#Portfolio'>
-				<Portfolio />
+
+			{/*project sections */}
+			<section id='#Project1'>
+				<Project1 />
 			</section>
+			<section id='#Project2'>
+				<Project2 />
+			</section>
+			<section id='#Project3'>
+				<Project3 />
+			</section>
+			<section id='#Project4'>
+				<Project4 />
+			</section>
+			<section id='#Project5'>
+				<Project5 />
+			</section>
+
 			<section id='#contact'>
 				<Contact />
 			</section>

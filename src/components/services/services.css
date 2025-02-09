@@ -130,8 +130,7 @@
 		width: 100%;
 	}
 
-	.services {
-		display: flex;
-		flex-direction: column;
+	.sSection.right {
+		display: none;
 	}
 }
