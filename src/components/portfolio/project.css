@@ -1,5 +1,5 @@
 .project {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	gap: 50px;
 	justify-content: center;

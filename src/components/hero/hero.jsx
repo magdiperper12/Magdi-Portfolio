@@ -53,21 +53,33 @@ function Hero() {
 					<motion.div
 						variants={awardsvaraints}
 						className='awardList'>
-						<motion.img
+						<motion.a
 							variants={awardsvaraints}
-							src='/award1.png'
-							alt=''
-						/>
-						<motion.img
+							title='CV'
+							href='https://drive.google.com/file/d/1esvR9c9E2tTyqudjyCEijZikUq77op2E/view?usp=drive_open'>
+							<img
+								src='/folder.png'
+								alt=''
+							/>
+						</motion.a>
+						<motion.a
 							variants={awardsvaraints}
-							src='/award2.png'
-							alt=''
-						/>
-						<motion.img
+							title='Linkedin'
+							href='https://www.linkedin.com/in/magdi-perper-95b132343/'>
+							<img
+								src='/linkedin.png'
+								alt=''
+							/>
+						</motion.a>
+						<motion.a
 							variants={awardsvaraints}
-							src='/award3.png'
-							alt=''
-						/>
+							title='github'
+							href='https://drive.google.com/file/d/1esvR9c9E2tTyqudjyCEijZikUq77op2E/view?usp=drive_open'>
+							<img
+								src='/github.png'
+								alt=''
+							/>
+						</motion.a>
 					</motion.div>
 				</motion.div>
 				{/*scroll svg*/}
@@ -84,7 +96,7 @@ function Hero() {
 					animate={isview ? 'animate' : 'initial'}>
 					<motion.a
 						variants={followvariants}
-						href='/'>
+						href='https://www.instagram.com/magdiperper4/'>
 						<img
 							src='/instagram.png'
 							alt=''
@@ -92,7 +104,7 @@ function Hero() {
 					</motion.a>
 					<motion.a
 						variants={followvariants}
-						href='/'>
+						href='https://web.facebook.com/magdi.perper.9'>
 						<img
 							src='/facebook.png'
 							alt=''
@@ -100,9 +112,9 @@ function Hero() {
 					</motion.a>
 					<motion.a
 						variants={followvariants}
-						href='/'>
+						href='https://www.linkedin.com/in/magdi-perper-95b132343/'>
 						<img
-							src='/youtube.png'
+							src='/public/whatsapp.png'
 							alt=''
 						/>
 					</motion.a>

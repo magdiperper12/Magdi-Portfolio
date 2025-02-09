@@ -8,7 +8,7 @@ const Project1 = () => {
 				desc={
 					'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks,Getsby , Hostinger, etc & used by thousands of developers globally'
 				}
-				image='/p1.jpg'
+				image='/botbat.PNG'
 				live={'https://bat-chat.surge.sh/'}
 				github={'https://github.com/magdiperper12/botbat'}
 			/>

@@ -26,13 +26,15 @@
 	width: 50%;
 	padding: 30px;
 	border-radius: 20px;
-	background-color: #2f213f;
+	background-color: #3c2a51;
 	display: flex;
 	align-items: center;
 	gap: 16px;
 	cursor: pointer;
 }
-
+.service:hover {
+	background-color: #50376d;
+}
 .serviceIcon {
 	width: 48px;
 	height: 48px;
@@ -48,13 +50,13 @@
 }
 
 .serviceInfo h2 {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 8px;
 }
 
 .serviceInfo h3 {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 300;
 }
 

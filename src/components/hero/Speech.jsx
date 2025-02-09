@@ -23,7 +23,7 @@ function Speech() {
 				/>
 			</div>
 			<img
-				src='/man.png'
+				src='/magdi.png'
 				alt=''
 			/>
 		</motion.div>

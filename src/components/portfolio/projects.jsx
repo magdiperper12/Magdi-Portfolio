@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 const Project = ({ name, desc, image, live, github }) => {
 	const ref = useRef();
-	const isInView = useInView(ref, { margin: '-200px' });
+	const isInView = useInView(ref, { margin: '-300px' });
 
 	const listVariant = {
 		initial: {

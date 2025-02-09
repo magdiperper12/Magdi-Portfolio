@@ -4,10 +4,10 @@ function Shape() {
 	return (
 		<>
 			<Sphere
-				args={[1.1, 150, 250]}
+				args={[1.1, 50, 250]}
 				scale={2.3}>
 				<MeshDistortMaterial
-					color='red'
+					color='#694aa7'
 					attach='material'
 					distort={0.5}
 					speed={2}

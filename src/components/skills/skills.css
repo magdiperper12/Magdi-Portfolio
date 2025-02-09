@@ -1,0 +1,9 @@
+.skills {
+	height: 100vh;
+	background: #3a3a6b;
+	font-size: 100px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

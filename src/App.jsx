@@ -6,6 +6,7 @@ import Project3 from './components/portfolio/project3';
 import Project4 from './components/portfolio/project4';
 import Project5 from './components/portfolio/project5';
 import Services from './components/services/services';
+import Skills from './components/skills/skills';
 const App = () => {
 	return (
 		<div className='container'>
@@ -14,6 +15,11 @@ const App = () => {
 			</section>
 			<section id='#services'>
 				<Services />
+			</section>
+
+			{/*skills */}
+			<section>
+				<Skills id='#skills' />
 			</section>
 
 			{/*project sections */}

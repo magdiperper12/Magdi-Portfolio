@@ -4,13 +4,13 @@ const Project3 = () => {
 	return (
 		<div>
 			<Project
-				name={'old Portfolio'}
+				name={'Social Media'}
 				desc={
-					'Frontend Developer I am a frontend web developer with more than two years of experience Proven experience building successful products for clients across several countries.'
+					'by using next js , tailwind and typescript make this website are a social media website that have all the feature of social media like post , comment , like and followin also have notification and stories'
 				}
-				image='/p3.jpg'
-				live={'https://magdi-portfolio.surge.sh/'}
-				github={'https://github.com/magdiperper12/portfolio'}
+				image='/social.PNG'
+				live={'https://social-midea.vercel.app/'}
+				github={'https://github.com/magdiperper12/SocialMidea'}
 			/>
 		</div>
 	);
