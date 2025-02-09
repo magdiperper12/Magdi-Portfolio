@@ -45,6 +45,7 @@ const Project = ({ name, desc, image, live, github }) => {
 					className='btn'>
 					<motion.a
 						className='anchor'
+						target='_blank'
 						href={live}
 						variants={listVariant}>
 						Live <FaEye />
@@ -52,6 +53,7 @@ const Project = ({ name, desc, image, live, github }) => {
 					<motion.a
 						className='anchor'
 						href={github}
+						target='_blank'
 						variants={listVariant}>
 						Github <FaGithub />
 					</motion.a>
