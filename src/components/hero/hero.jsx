@@ -57,7 +57,7 @@ function Hero() {
 							target='_blank'
 							variants={awardsvaraints}
 							title='CV'
-							href='https://drive.google.com/file/d/1esvR9c9E2tTyqudjyCEijZikUq77op2E/view?usp=drive_open'>
+							href='https://drive.google.com/file/d/1zyOQaaNB9BjVZTcdpqkzsFXAR8syJOFh/view'>
 							<img
 								loading='lazy'
 								src='/folder.png'
