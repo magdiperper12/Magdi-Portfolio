@@ -66,7 +66,7 @@ const Contact = () => {
 					<motion.h1
 						variants={listVariant}
 						className='cTitle'>
-						Let's keep in touch
+						{"Let's"} keep in touch
 					</motion.h1>
 					<motion.div
 						variants={listVariant}

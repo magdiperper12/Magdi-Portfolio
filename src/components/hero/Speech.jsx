@@ -25,6 +25,7 @@ function Speech() {
 			<img
 				src='/magdi.png'
 				alt=''
+				loading='lazy'
 			/>
 		</motion.div>
 	);

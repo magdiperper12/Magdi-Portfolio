@@ -1,7 +1,7 @@
 import './project.css';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
-import { FaEye, FaGit, FaGithub } from 'react-icons/fa';
+import { FaEye, FaGithub } from 'react-icons/fa';
 
 const Project = ({ name, desc, image, live, github }) => {
 	const ref = useRef();
@@ -31,6 +31,7 @@ const Project = ({ name, desc, image, live, github }) => {
 			animate={isInView ? 'animate' : 'initial'}>
 			<motion.img
 				src={image}
+				loading='lazy'
 				variants={listVariant}
 			/>
 			<motion.div

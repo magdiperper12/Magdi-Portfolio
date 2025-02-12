@@ -1,4 +1,3 @@
-import { MdOpacity } from 'react-icons/md';
 import Contact from './components/contact/contact';
 import Hero from './components/hero/hero';
 import Project1 from './components/portfolio/project1';
@@ -8,13 +7,10 @@ import Project4 from './components/portfolio/project4';
 import Project5 from './components/portfolio/project5';
 import Services from './components/services/services';
 import Skills from './components/skills/skills';
-import { motion } from 'motion/react';
+
 const App = () => {
 	return (
-		<motion.div
-			className='container'
-			animate={{ opacity: [0, 1] }}
-			transition={{ delay: 3, duration: 0.7 }}>
+		<div className='container'>
 			<section id='#home'>
 				<Hero />
 			</section>
@@ -47,7 +43,7 @@ const App = () => {
 			<section id='#contact'>
 				<Contact />
 			</section>
-		</motion.div>
+		</div>
 	);
 };
 

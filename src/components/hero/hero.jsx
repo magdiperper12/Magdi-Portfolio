@@ -54,28 +54,34 @@ function Hero() {
 						variants={awardsvaraints}
 						className='awardList'>
 						<motion.a
+							target='_blank'
 							variants={awardsvaraints}
 							title='CV'
 							href='https://drive.google.com/file/d/1esvR9c9E2tTyqudjyCEijZikUq77op2E/view?usp=drive_open'>
 							<img
+								loading='lazy'
 								src='/folder.png'
 								alt=''
 							/>
 						</motion.a>
 						<motion.a
+							target='_blank'
 							variants={awardsvaraints}
 							title='Linkedin'
 							href='https://www.linkedin.com/in/magdi-perper-95b132343/'>
 							<img
+								loading='lazy'
 								src='/linkedin.png'
 								alt=''
 							/>
 						</motion.a>
 						<motion.a
+							target='_blank'
 							variants={awardsvaraints}
 							title='github'
-							href='https://drive.google.com/file/d/1esvR9c9E2tTyqudjyCEijZikUq77op2E/view?usp=drive_open'>
+							href='https://github.com/magdiperper12'>
 							<img
+								loading='lazy'
 								src='/github.png'
 								alt=''
 							/>
@@ -95,25 +101,31 @@ function Hero() {
 					variants={followvariants}
 					animate={isview ? 'animate' : 'initial'}>
 					<motion.a
+						target='_blank'
 						variants={followvariants}
 						href='https://www.instagram.com/magdiperper4/'>
 						<img
+							loading='lazy'
 							src='/instagram.png'
 							alt=''
 						/>
 					</motion.a>
 					<motion.a
+						target='_blank'
 						variants={followvariants}
 						href='https://web.facebook.com/magdi.perper.9'>
 						<img
+							loading='lazy'
 							src='/facebook.png'
 							alt=''
 						/>
 					</motion.a>
 					<motion.a
+						target='_blank'
 						variants={followvariants}
 						href='https://www.linkedin.com/in/magdi-perper-95b132343/'>
 						<img
+							loading='lazy'
 							src='/whatsapp.png'
 							alt=''
 						/>
@@ -133,6 +145,7 @@ function Hero() {
 					transition={{ duration: 1.5, delay: 0.5 }}
 					className='certificate'>
 					<img
+						loading='lazy'
 						src='/certificate.png'
 						alt=''
 					/>
@@ -142,6 +155,7 @@ function Hero() {
 				</motion.div>
 				{/*contact button*/}
 				<motion.a
+					target='_blank'
 					animate={{ rotate: [0, 360] }}
 					transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
 					href='/#contact'
@@ -194,6 +208,7 @@ function Hero() {
 					transition={{ duration: 1 }}
 					className='himg'>
 					<img
+						loading='lazy'
 						src='/magdi.png'
 						alt=''
 					/>
