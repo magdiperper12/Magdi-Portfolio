@@ -53,8 +53,8 @@ const services = [
 	{
 		id: 3,
 		img: '/service3.png',
-		title: 'Framework',
-		counter: 7,
+		title: 'Frameworks Learned',
+		counter: 5,
 	},
 ];
 

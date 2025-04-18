@@ -5,6 +5,7 @@ import Project2 from './components/portfolio/project2';
 import Project3 from './components/portfolio/project3';
 import Project4 from './components/portfolio/project4';
 import Project5 from './components/portfolio/project5';
+import Blog from './components/portfolio/project6';
 import Services from './components/services/services';
 import Skills from './components/skills/skills';
 
@@ -35,6 +36,9 @@ const App = () => {
 			</section>
 			<section id='#Project4'>
 				<Project4 />
+			</section>
+			<section id='#Project6'>
+				<Blog />
 			</section>
 			<section id='#Project5'>
 				<Project5 />
