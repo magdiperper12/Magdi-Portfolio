@@ -5,7 +5,7 @@ function Blog() {
 	return (
 		<div>
 			<Project
-				name={'other project in old Portfolio'}
+				name={'Blog'}
 				desc={
 					'Frontend Developer I am a frontend web developer with more than two years of experience Proven experience building successful products for clients across several countries.'
 				}
